@@ -1,0 +1,339 @@
+
+html, body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        padding: 0px;
+        font-style: normal;
+        background-color: #ffffff;
+        font-weight: 200;
+        line-height: 1.5;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /*Header Section*/
+
+    header {
+        padding: 15px 100px; /* Adjusted padding for top/bottom and left/right */
+        margin: 10px 100px; /* Adjusted margin for space between header and content */
+        text-align: left;
+        display: flex;
+        color: #333;
+        border-radius: 15px; /* Rounded corners */
+        justify-content: space-between; /* Align items on the same line */
+        align-items: center; /* Vertically center items */
+    }
+
+    .heading {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 15px 25px;
+        color: #fff; /* Set text color to match outline color */
+        background: #f0645c; 
+        border-radius: 15px;
+        font-size: 25px;
+        transition: background-color 0.3s ease;
+        margin-bottom: 350px; /* Adjust margin-bottom for space between buttons */
+        margin-right: 10px;
+        margin-left: 10px;
+        text-decoration: none; /* Remove underline */
+    }   
+
+    .button:hover {
+        background-color: #cc544e;
+        color: #fff;
+        outline-width: 44px;
+    }
+
+    .navigation {
+        display: flex; /* Makes the menu items display horizontally */
+        margin: 0;
+        padding: 0;
+        justify-content: left; /* Aligns the menu items to the left */
+        display: flex; /* Makes the menu items display horizontally */
+    }
+
+    .navigation li {
+        margin-right: 20px; /* Adds spacing between menu items */
+        margin-bottom: 0px; /* Add margin below each navigation item */ 
+        list-style: none;
+        display: inline-block;   
+    }
+
+    .navigation li:last-child {
+        margin-right: 0; /* Removes margin from the last item */
+    }
+
+    .navigation ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        padding: 10px 15px;
+        margin:0;
+        border:0px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .navigation a:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 4px; /* Adjust the thickness of the underline */
+    }
+
+
+    ul, ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    /* Homepage styles */
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .block-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+    }
+
+    /*Sizing*/
+
+    .container {
+        margin: 0 auto;
+    }
+    
+    .spacer {
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    /*Jumbotron Section*/
+
+    .jumbotron {
+        background-color: #fff;
+        text-align: center;
+        font-size: 80px;
+    }
+        
+    .jumbotron h2 {
+        font-size: 70px;
+        margin-bottom: 50px;
+    }
+        
+    /*.jumbotron h2 span {
+        color:#f0645c;
+    } */
+        
+    .jumbotron p {
+        text-shadow: 0 0;
+        color: #333;
+        margin-bottom: 0;
+    }
+
+    /* 3 sections */
+
+    .mini-sections-container {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+    .mini-section {
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .mini-section h3 {
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+    .description {
+        color: #333;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .icon-image{
+        width: 100px;
+        height: 100px;
+    }    
+
+    /* CARDS*/
+
+    root {
+        --accent: #c7ecee;
+        --accentComplimentary: #7ed6df;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font: 400 100%/1 "Nunito", serif;
+        color: #2f3640;
+      }
+      
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 350px);
+        gap: 35px;
+        padding: 60px 35px;
+        justify-content: center;
+      }
+      .card {
+        width: 350px; /* Adjust width as needed */
+        height: 650px; /* Adjust height as needed */
+        border-radius: 35px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 500px;
+    }
+    
+      .card__top {
+        position: relative;
+        background-color: var(--accentComplimentary);
+        padding: 35px 35px 70px 35px;
+        z-index: 0;
+        display: flex;
+        align-items: flex-start;
+      }
+      .card__top:has(.card__figure) {
+        aspect-ratio: 3/2;
+      }
+      .card__bottom {
+        position: relative;
+        margin-top: -35px;
+        background-color: var(--accent);
+        padding: 35px;
+        border-radius: 35px;
+        display: flex;
+        gap: 60px;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+        z-index: 1;
+      }
+      .card__figure {
+        position: absolute;
+        inset: 0;
+        mix-blend-mode: lighten;
+        opacity: 0.5;
+      }
+      .card__image {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+      }
+      .card__tag {
+        padding: 10px 20px;
+        border: 1px solid currentColor;
+        border-radius: 2em;
+        position: relative;
+        z-index: 1;
+      }
+      .card__title {
+        font-size: 2.5rem;
+      }
+      .card__text {
+        font-size: 1.25rem;
+      }
+      
+      .card--reverse {
+        flex-direction: column-reverse;
+      }
+      .card--reverse .card__bottom {
+        margin-top: 0;
+        margin-bottom: -35px;
+      }
+      .card--reverse .card__top {
+        position: relative;
+        padding: 70px 35px 35px 35px;
+        align-items: flex-end;
+      }
+      
+      .card--primary {
+        --accent: #888df1;
+        --accentComplimentary: #333;
+      }
+      
+      .card--secondary {
+        --accent: #78c494;
+        --accentComplimentary: #333;
+      }
+      
+      .card--tertiary {
+        --accent: #ffdc74;
+        --accentComplimentary: #333;
+    }
+
+    /* Footer */
+
+  footer{
+    background-color: #2e2d2d;
+    color: #fff;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 150px;
+  }
+  
+  footer h3{
+      font-size: 48px;
+  }
+  
+  footer .right{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 26px;
+  }
+  
+  footer .right .links{
+      display: flex;
+      gap: 30px;
+  }
+  
+  footer .right .links a{
+      color: #fff;
+      transition: color 0.3s ease;
+  }
+  
+  footer .right .links a:hover{
+      color: #fff;
+  }
+  
+  footer .right .social{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  }
+  
+  footer .right .social i{
+      font-size: 30px;
+      cursor: pointer;
+      transition: color 0.3s ease;
+  }
